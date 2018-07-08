@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/profile_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                app:civ_border_width="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:layout_below="@+id/profile_photo"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:id="@+id/changeProfilePhoto"
+                />
+
+            //Change Name
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/changeProfilePhoto"
+                android:layout_marginTop="40dp"
+                android:id="@+id/changeName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-5dp"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/blue"
+                    android:id="@+id/EditTextChangeName"
+                    />
+
+            </RelativeLayout>
+
+            //Change Username
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/changeName"
+                android:id="@+id/changeUserName"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-5dp"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/blue"
+                    android:id="@+id/EditTextChangeUsername"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/changeUserName"
+                android:id="@+id/ChangeBio"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bio"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-5dp"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/blue"
+                    android:id="@+id/EditTextChangeBio"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="@color/black"
+                android:layout_below="@id/ChangeBio"
+                android:layout_marginTop="20dp"
+                android:id="@+id/horizontal_line_1"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontal_line_1"
+                android:text="Private Information"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/private_information"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/private_information"
+                android:id="@+id/Email_address"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail Address"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-5dp"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/blue"
+                    android:id="@+id/EditTextEmailAddress"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/Email_address"
+                android:id="@+id/PhoneNumber"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="14dp"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/blue"
+                    android:id="@+id/EditTextPhoneNumber"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</merge>
